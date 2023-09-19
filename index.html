@@ -57,9 +57,23 @@
     <h1>Formulär</h1>
     <!-- form-tag med input fält-->
     <form action="" method="get">
-        <input type="text" name="strNamn" id="strNamn">
+        <div>
+            <label for="strNamn">Skriv namn här:</label>
+            <input type="text" name="strNamn" id="strNamn" required placeholder="Skriv namn här">
+        </div>
+        
+        <div>
+            <label for="intAge">Skriv ålder här:</label>
+            <input type="number" name="intAge" id="intAge" min="0" max="100" required placeholder="35">
+        </div>
 
-        <input type="number" name="intAge" id="intAge" min="0" max="100">
+        <div>
+            <input type="color">
+        </div>
+
+        <div>
+            <input type="datetime-local">
+        </div>
 
         <button type="submit">Skicka iväg data</button>
     </form>
