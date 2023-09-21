@@ -2,7 +2,7 @@
 .flexBoxContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .flexItem {
@@ -19,14 +19,19 @@ h1, h2 {
     text-align: left;
 }
 
-@media screen and (max-width: 600px) {
-    table, th, td {
-        border-style: none;
+@media screen and (max-width: 1000px) {
+    /*Flexbox Style rules*/
+    .flexBoxContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
-}
 
-@media screen and (max-width: 800px) {
     h1, h2 {
-        text-align: left;
+        text-align: center;
+    }
+
+    table, th, td {
+        /* border-style: none; */
     }
 }
