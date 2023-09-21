@@ -2,12 +2,16 @@
 .flexBoxContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .flexItem {
     border-width: 1px;
     border-style: solid;
+}
+
+#guinea {
+    max-width: 400px;
 }
 
 table, th, td {
@@ -23,7 +27,7 @@ h1, h2 {
     /*Flexbox Style rules*/
     .flexBoxContainer {
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
     }
 
@@ -34,5 +38,9 @@ h1, h2 {
 
     table, th, td {
         /* border-style: none; */
+    }
+
+    #guinea {
+        max-width: 100%;
     }
 }
