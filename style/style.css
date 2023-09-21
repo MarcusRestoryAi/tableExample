@@ -23,12 +23,13 @@ h1, h2 {
     /*Flexbox Style rules*/
     .flexBoxContainer {
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
     }
 
     h1, h2 {
         text-align: center;
+        margin: 0px;
     }
 
     table, th, td {
