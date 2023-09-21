@@ -2,6 +2,12 @@
 .flexBoxContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexItem {
+    border-width: 1px;
+    border-style: solid;
 }
 
 table, th, td {
